@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question#02v - Answer</title>
+</head>
+<body>
+    <script>
+        var a = 2, b = 1;
+        document.write("<br> The value of a is: "+ a);
+        document.write("<br> The value of b is: "+ b);
+
+        var result = --a - --b + ++b + b--;
+        document.write("<br> The result of --a - --b + ++b + b-- is: "+ result);
+
+        document.write("<br>-------------------------------------------------<br> Explaination:");
+        document.write("<br> The value of --a is: 1");
+        document.write("<br> The value of --b is: 0");
+        document.write("<br> The Output of --a - --b (1 - 0) is: 1");
+        document.write("<br> The Output of --a - --b + ++b (1 - 0 + 2) is: 3");
+        document.write("<br> The Output of --a - --b + ++b + b-- (1 - 0 + 2 + 0) is: "+ result);
+    </script>
+</body>
+</html>
