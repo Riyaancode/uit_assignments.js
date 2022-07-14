@@ -77,7 +77,7 @@ function trigPromt3(params) {
 
 function Q5_Ans(params) {
     document.write("<h3>Enter your password here: </h3><input type='password' id='pass'>");
-    
+    document.write("<br><button onclick='trigPromt4()'>Submit</button> <br> <h4 id='message'><h4>");
 }
 
 function trigPromt4(params) {
@@ -106,7 +106,7 @@ function Q6_Ans(params) {
 function Q7_Ans(params) {
     
     document.write("<h3>Enter your password here: </h3><input type='time' id='time'><span id='msg'></span>");
-    document.write("<br><button onclick='trigPromt5()'>Submit</button> <br> <h4 id='message'><h4>");
+    document.write("<br><button onclick='trigPromt5()'>Submit</button>");
 
 }
 
