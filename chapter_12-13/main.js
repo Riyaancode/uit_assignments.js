@@ -14,7 +14,7 @@ function trigPromt1(params) {
     } else if (char.charCodeAt() >= 97 && char.charCodeAt() <= 122) {
         alert('Character ' + char + ' is lower case letter');
     } else if (char.charCodeAt() >= 48 && char.charCodeAt() <= 57) {
-        alert('Character ' + char + ' is a number');
+        alert('Character ' + char + ' is an number');
     }
 }
 
