@@ -93,8 +93,8 @@ function Q5_Ans(params) {
 
 function Q6_Ans(params) {
     let str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis posuere elementum. Etiam erat metus, consequat in libero ac, scelerisque placerat nisi. Maecenas gravida auctor";
-    let result = str.replace(/[aeiou]{2}/gi, '');
-    document.write(result + str);
+    let result = str.replace(/[aeiou]/gi, '');
+    document.write(result);
 }
 
 
@@ -102,31 +102,60 @@ function Q6_Ans(params) {
 
 //
 function Q7_Ans(params) {
-    let str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis posuere elementum. Etiam erat metus, consequat in libero ac, scelerisque placerat nisi. Maecenas gravida auctor";
-    var chars = str.toLowerCase().split("");
-    var count = 0;
+    // let str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis posuere elementum. Etiam erat metus, consequat in libero ac, scelerisque placerat nisi. Maecenas gravida auctor";
+    // var chars = str.toLowerCase().split("");
+    // var count = 0;
 
-    for (let i = 0; i < chars.length - 1; i++) {//can't understand
-        var char = chars[i];
-        var next = chars[i + 1];
+    // for (let i = 0; i < chars.length - 1; i++) {//can't understand
+    //     var char = chars[i];
+    //     var next = chars[i + 1];
 
-        if (isCorrectCharacter(char) && isCorrectCharacter(next)) {
-            count++//can't understand
-        }
-    }
+    //     if (isCorrectCharacter(char) && isCorrectCharacter(next)) {
+    //         count++//can't understand
+    //     }
+    // }
 
-    return count;
+    // return count;
+    document.write(":(")
 }
 
-function isCorrectCharacter(char) {
-    switch (char) {
-        case 'a':
-        case 'e':
-        case 'i':
-        case 'o':
-        case 'u':
-            return true;
-        default:
-            return false;
-    }
+// function isCorrectCharacter(char) {
+//     switch (char) {
+//         case 'a':
+//         case 'e':
+//         case 'i':
+//         case 'o':
+//         case 'u':
+//             return true;
+//         default:
+//             return false;
+//     }
+// }
+
+function Q8_Ans(params) {
+    document.write('<h2>Enter the Value in kilometers</h3><input type="number" id="kl"><br><h3 id="val"></h3><button type="submit" onclick="meter()">Covert to Meter</button><button type="submit" onclick="feet()">Covert to Feet</button><button type="submit" onclick="inches()">Covert to Inches</button><button type="submit" onclick="centimeter()">Covert to Centimeter</button>');
+}
+
+function meter(params) {
+    let kl = document.getElementById('kl').value;
+    var meter = kl*1000;
+    document.getElementById('val').innerText= 'to Meter ' + meter;
+}
+
+function feet(params) {
+    let kl = document.getElementById('kl').value;
+    var feet = kl* 3280.839895;
+    document.getElementById('val').innerText= 'to Feet ' + feet;
+}
+
+function inches(params) {
+    let kl = document.getElementById('kl').value;
+    var inches = kl* 39370.1;
+    document.getElementById('val').innerText= 'to Inches ' + inches;
+}
+
+function centimeter(params) {
+    let kl = document.getElementById('kl').value;
+    var cm = kl* 100000;
+    document.getElementById('val').innerText= 'to Centimeter ' + cm;
 }
